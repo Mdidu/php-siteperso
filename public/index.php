@@ -27,7 +27,6 @@ foreach ($user as $use => $val){
     }else {
         echo $use." : ".$val."<br>";
     }
-
 }
 getPart('footer');
 
