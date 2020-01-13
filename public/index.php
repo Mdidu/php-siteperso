@@ -15,5 +15,21 @@ require __DIR__ . '/../lib/functions.php';
 // l'exemple avec le header, à vous de jouer pour le reste
 getPart('header');
 getContent();
+$user = getUserData();
+foreach ($user as $use => $val){
+    if($use == "experiences"){
+        echo $use."<br>";
+        foreach ($val as $key => $val2){
+            foreach ($val2 as $key2 => $val3){
+                echo $key2." : ".$val3."<br>";
+            }
+        }
+    }else {
+        echo $use." : ".$val."<br>";
+    }
+
+}
 getPart('footer');
+
+getUserData();
 

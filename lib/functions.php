@@ -15,12 +15,14 @@ function getContent(){
     }elseif(isset($_GET['page']) && $_GET['page'] == "contact") {
 
         include __DIR__.'/../pages/contact.php';
-    }else {
-		// le reste du code
-
     }
 }
 
 function getPart($name){
 	include __DIR__ . '/../parts/'. $name . '.php';
+}
+
+function getUserData (){
+    $json = file_get_contents("../data/user.json");
+    return json_decode($json, true);
 }
