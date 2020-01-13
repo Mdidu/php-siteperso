@@ -1,10 +1,8 @@
 <footer>
-    <p>put some footer here</p>
     <ul>
-        <li>C.G.U</li>
-        <li>Condition Générales</li>
-        <li>Politique de confidentialité</li>
-        <li>Nous contacter</li>
+        <a href="../public/index.php?page=<?= "bio"?>"><li>BIO</li></a>
+        <a href="../public/index.php?page=<?= "contact"?>"><li>Nous contacter</li></a>
+        <a href="../public/index.php"><li>Page accueil</li></a>
     </ul>
 </footer>
 
