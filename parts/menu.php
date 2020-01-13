@@ -1,6 +1,5 @@
 <ul>
-    <li>Menu 1</li>
-    <li>Menu 2</li>
-    <li>Menu 3</li>
-    <li>Menu 4</li>
+    <li><a href="../public/index.php?page=<?= "bio"?>">Bio</a></li>
+    <li><a href="../public/index.php?page=<?= "contact"?>">Contact</a></li>
+    <li><a href="../public/index.php">Home Page</a></li>
 </ul>
